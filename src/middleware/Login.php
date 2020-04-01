@@ -17,8 +17,8 @@ class Login
      */
     public function handle ($request, \Closure $next)
     {
-        if (!User::is_login()) {
-            return result(null, 400, User::error_message());
+        if (!request()->header('jwt-token') && !User::is_login()) {
+            return result(null, 400, User::error_message() ?: 'token不存在');
         }
         $next($request);
     }
