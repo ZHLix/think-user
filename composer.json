@@ -1,0 +1,24 @@
+{
+  "name": "zhlix/think-user",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "zhlix",
+      "email": "15127441165@163.com"
+    }
+  ],
+  "require": {
+    "ext-json": "*",
+    "php": ">=7.1.0",
+    "topthink/framework": "^6.0",
+    "firebase/php-jwt": "^5.1",
+    "zhlix/think-helper": "^1.0"
+  },
+  "extra": {
+    "think": {
+      "config": {
+        "user": "config.php"
+      }
+    }
+  }
+}
