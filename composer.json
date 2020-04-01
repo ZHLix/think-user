@@ -12,7 +12,16 @@
     "php": ">=7.1.0",
     "topthink/framework": "^6.0",
     "firebase/php-jwt": "^5.1",
-    "zhlix/think-helper": "^1.0"
+    "zhlix/think-helper": "^1.0",
+    "topthink/think-migration": "^3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "zhlix\\user\\": "src"
+    },
+    "files": [
+      "helper.php"
+    ]
   },
   "extra": {
     "think": {
